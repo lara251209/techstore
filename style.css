@@ -1,0 +1,249 @@
+
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: #0d1b2a;
+  color: white;
+  min-height: 80px;
+  padding: 15px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00b4d8;
+}
+
+.navbar h1 {
+  font-size: 22px;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00b4d8;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+  padding: 70px 8%;
+}
+
+section h2 {
+  color: #0d1b2a;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   INÍCIO
+========================= */
+
+#inicio {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+}
+
+#inicio h2 {
+  color: white;
+  font-size: 38px;
+}
+
+#inicio p {
+  font-size: 18px;
+}
+
+
+
+#produtos {
+  background-color: white;
+  text-align: center;
+}
+
+#produtos ol {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#produtos li {
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f1f5f9;
+  border-left: 5px solid #00b4d8;
+  border-radius: 5px;
+}
+
+#produtos img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.sec2 {
+  background-color: #5e5e93;
+}
+
+#contato {
+  text-align: center;
+}
+
+#contato form {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgb(74, 69, 110);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #0d1f2a;
+}
+
+#contato input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccd6dd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contato input:focus {
+  border-color: #00b4d8;
+  box-shadow: 0 0 5px rgba(0, 180, 216, 0.3);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+#contato button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0077b6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contato button:hover {
+  background-color: #00b4d8;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+
+  #inicio h2 {
+    font-size: 30px;
+  }
+
+  #produtos h2,
+  #contato h2 {
+    font-size: 26px;
+  }
+
+  #contato form {
+    padding: 20px;
+  }
+  #imagem{
+    padding-top: 2rem;
+    gap: 2rem;
+   
+  }
+}
